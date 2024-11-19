@@ -1,29 +1,31 @@
-# auth router
+# DevTinder APIs
 
-POST /login
-POST /signup
-POST /logout
+## auth router
 
-# profile router
+- POST /login
+- POST /signup
+- POST /logout
 
-GET /profile/view
-PATCH /profile/edit
-PATCH /profile/password
+## profile router
 
-# connection router
+- GET /profile/view
+- PATCH /profile/edit
+- PATCH /profile/password
 
-POST /request/send/:status/:userId -> ignoring (left swipe) / sending (right swipe) connection request
-POST /request/view/:status/:requestId -> accepting/rejecting the connection request received from other users
+## connection router
 
-# user router
+- POST /request/send/:status/:userId -> ignoring (left swipe) / sending (right swipe) connection request
+- POST /request/view/:status/:requestId -> accepting/rejecting the connection request received from other users
 
-GET /user/connection
-GET /user/requests/received
-GET /user/feed
+## user router
+
+- GET /user/connection
+- GET /user/requests/received
+- GET /user/feed
 
 \*status : [ ACCEPTED, REJECTED, PASS, LIKE ]
 
-# features to consider adding later
+## features to consider adding later
 
 1. chat
 2. add forgot password feature
